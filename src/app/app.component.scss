@@ -13,6 +13,7 @@ mat-toolbar {
   
   .container-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
   
@@ -44,4 +45,22 @@ mat-toolbar {
   
   .cdk-drag-placeholder {
     opacity: 0;
+  }
+
+  @media (max-width: 1200px) {
+   
+  }
+  @media (max-width: 992px) {	
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+    .container-wrapper {
+
+      flex-direction: column;
+  
+    }
+  }
+  @media (max-width: 768px) {
+
   }
